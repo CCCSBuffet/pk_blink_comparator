@@ -30,8 +30,29 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Remember, on your computer you may need to type `python3` or just `python` and you will likely get a different Python version - which **must** begin with 3.
 
-## Step - ensure the two pictures are in the right place
+## Step 1 - ensure the two pictures are in the right place
 
 1. Create a folder called `blink`
 2. Download [p1.jpg]() and [p2.jpg]()
 3. Put both in the folder named `blink`
+4. Start a program called `blink.py`
+5. Enter
+```python
+import cv2
+
+images = []
+images.append(cv2.imread('p1.jpg'))
+images.append(cv2.imread('p2.jpg'))
+```
+6. Save and attempt to run this program. If there is no output, all is well. If any errors occur, all is not well.
+
+### Discussion
+
+Our goal is to switch between two images, to *ping-pong* between them so to speak. 
+
+`images` is declared as an empty list.
+
+`cv2.imread()` is given the name (or path) to the image to load. The return value is immediately appended to `images`. Note that this code does not perform well in the presence of errors. In fact, it performs no error checking at all.
+
+After executing this code, `images[0]` and `images[1]` contain the image information for `p1.jpg` and `p2.jpg`
+
