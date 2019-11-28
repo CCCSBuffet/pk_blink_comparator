@@ -1,8 +1,8 @@
 import cv2
 
 images = []
-images.append(cv2.imread('0.jpg'))
-images.append(cv2.imread('1.jpg'))
+images.append(cv2.imread('p1.jpg'))
+images.append(cv2.imread('p2.jpg'))
 current_index = 0
 key = ''
 while key != 'q':
