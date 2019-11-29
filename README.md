@@ -33,7 +33,7 @@ Remember, on your computer you may need to type `python3` or just `python` and y
 ## Step 1 - ensure the two pictures are in the right place
 
 1. Create a folder called `blink`
-2. Download [p1.jpg]() and [p2.jpg]()
+2. Download [p1.jpg]() and [p2.jpg](). They are in the zip file [pluto.zip]().
 3. Put both in the folder named `blink`
 4. Start a program called `blink.py`
 5. Enter:
@@ -110,3 +110,21 @@ This integer will ping-pong from 0 to 1 each time a key other than `q` is depres
 #### `cv2.destroyAllWindows()`
 
 This function does what it says. Use it before exiting a program that uses OpenCV windows.
+
+#### The "gist" of the main loop
+
+The loop continues until the user hits the `q` key. On any other key, the displayed image alternates between picture 1 and picture 2 based upon `current_index`.
+
+## Your turn - making a flipbook from the Muybridge Horse photos
+
+On June 19th, 1878 Eadweard Muybridge set up one dozen cameras with trip wires to settle a long standing question. Was there a time when all of a horse's hooves are off the ground at the same time.
+
+![muybridge](./muybridge.png)
+
+Expanding on what you've learning above, you will create a flipbook that lets you run forwards or backwards over 12 images. If the user hits the `a` key, the `current_index` should decrement by 1. If the user hits the `s` key, the `current_index` should be incremented by one. As before, if the user hits the `q` key, the program should end.
+
+Clearly `current_index` will grow beyond the number of images defined in the sequence and this would cause an `index error`. Similarly, if going backwards, `current_index` can become negative which will also end in tears.
+
+You will need to keep `current_index` in the right range.
+
+
