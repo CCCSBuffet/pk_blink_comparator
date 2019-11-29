@@ -125,6 +125,6 @@ Expanding on what you've learning above, you will create a flipbook that lets yo
 
 Clearly `current_index` will grow beyond the number of images defined in the sequence and this would cause an `index error`. Similarly, if going backwards, `current_index` can become negative which will also end in tears.
 
-You will need to keep `current_index` in the right range.
+You will need to keep `current_index` in the right range. Perhaps the `%` operator can be of assistance?
 
 
