@@ -33,7 +33,7 @@ Remember, on your computer you may need to type `python3` or just `python` and y
 ## Step 1 - ensure the two pictures are in the right place
 
 1. Create a folder called `blink`
-2. Download [p1.jpg]() and [p2.jpg](). They are in the zip file [pluto.zip]().
+2. Download [p1.jpg](./plut.zip) and [p2.jpg](./pluto.zip). They are in the zip file [pluto.zip](./pluto.zip).
 3. Put both in the folder named `blink`
 4. Start a program called `blink.py`
 5. Enter:
@@ -45,6 +45,7 @@ images = []
 images.append(cv2.imread('p1.jpg'))
 images.append(cv2.imread('p2.jpg'))
 ```
+
 6. Save and run this program. If there is no output, all is well. If any errors occur, all is not well.
 
 ---
@@ -89,9 +90,9 @@ cv2.destroyAllWindows()
 
 11. Hit `q` to exit
 
-### Discussion
+### More Discussion
 
-####  `cv2.imshow()`
+#### `cv2.imshow()`
 
 This usage of the OpenCV function `imshow()` takes two parameters. The first serves as a window **ID**. Any OpenCV window relation function that supplies the same value will refer to the same window. The second parameter is what image to show within the window.
 
@@ -127,4 +128,10 @@ Clearly `current_index` will grow beyond the number of images defined in the seq
 
 You will need to keep `current_index` in the right range. Perhaps the `%` operator can be of assistance?
 
+## Due date
 
+You have all of break and then one more week.
+
+## Work rules
+
+Feel free to work together so long as your team each learn the details of the project and solution.
